@@ -1,0 +1,24 @@
+    <script>
+        function Uczen(nazwisko, imie, wiek, klasa, sport) 
+        {
+            this.nazwisko = nazwisko;
+            this.imie = imie;
+            this.wiek = wiek;
+            this.klasa = klasa;
+            this.sport = sport;
+            this.wypisz = function() 
+            { 
+                document.write(this.imie + ' ' + this.nazwisko + ' ' + this.wiek + ' lat' + ' ' + this.sport + '<br>')
+            }
+        }
+        var osoba1 = new Uczen('Kowalski', 'Jan', 19, '4TD', 'Piłka Nożna');
+        var osoba2 = new Uczen('Nowak', 'Piotr', 18, '3TA', 'Siatkówka');
+        var osoba3 = new Uczen('Krzyżanowski', 'Mateusz', 18, '3TB', 'Siatkówka');
+        var osoba4 = new Uczen('Nowak', 'Piotr', 18, '3TA', 'Piłka ręczna');
+        var osoba5 = new Uczen('Zdrójkowska', 'Justyna', 17, '2TC', 'Siatkówka');
+        osoba1.wypisz();
+        osoba2.wypisz();
+        osoba3.wypisz();
+        osoba4.wypisz();
+        osoba5.wypisz();
+    </script>

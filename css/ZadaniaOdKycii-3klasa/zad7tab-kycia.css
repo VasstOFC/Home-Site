@@ -1,0 +1,33 @@
+html {
+  background: #0f0c29;
+  background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);
+  background: linear-gradient(to right, #24243e, #302b63, #0f0c29);
+}
+body {
+  margin: 0;
+}
+section#zadanie {
+    background-color: rgba(211, 211, 211, 0.425);
+    padding: 15px;
+    border-radius: 0 0 15px 15px;
+    width: 370px;
+    margin: 0 auto;
+}
+p#button {
+    display: inline-block;
+    margin-left: 15px;
+    font-size: 30px;
+    color:rgb(255, 255, 255)
+}
+a {
+    text-decoration: none;
+    color: rgb(190, 106, 226);
+}
+img {
+    border-radius: 5px;
+}
+a#back {
+  text-decoration: none;
+  font-weight: bold;
+  color: rgb(106, 108, 226);
+}

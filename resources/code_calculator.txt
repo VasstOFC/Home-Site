@@ -1,0 +1,24 @@
+        <script>
+            function dodawanie()
+          {
+           var dodawanie1=document.getElementById("poler").value;
+           var dodawanie2=document.getElementById("poled").value;
+           var dodawanie=0;
+          dodawanie=Number(dodawanie1)+Number(dodawanie2);
+          document.getElementById("wynik").innerHTML="   "+dodawanie;
+          }
+          
+           function odejmowanie()
+          {
+          var odejmowanie1=document.getElementById("poler").value;
+          var odejmowanie2=document.getElementById("poled").value;
+          var odejmowanie=0;
+          odejmowanie=Number(odejmowanie1)-Number(odejmowanie2);
+          document.getElementById("wynik").innerHTML="   "+odejmowanie;
+          }
+          </script>
+    <input type="text" id="poler"/>
+    <input type="text" id="poled"/><br>
+    <input type="submit" value="+" onclick="dodawanie()"/>
+    <input type="submit" value="-" onclick="odejmowanie()"/>
+    <hr>Wynik:<p id="wynik"> - </p>

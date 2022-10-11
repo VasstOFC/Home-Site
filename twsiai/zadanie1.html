@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Konstruktor obiektu JavaScript</title>
+    <link rel="stylesheet" href="/twsiai/css/zadanie1.css">
+</head>
+<body>
+    <div id="main">
+        <b style="color: black; font-size: larger;">Treść zadania</b><br><br>
+        <p>
+        Utwórz konstruktor obiektu <b>Uczen</b> z właściwościami: <br>nazwisko, imie, wiek, klasa, sport oraz metodę <b>wypisz()</b>, <br>która wyświetli właściwości: nazwisko, imie, wiek oraz sport. <br><br>
+        Na podstawie konstruktora utwórz pięć obiektów (uczniów), które będą zawierały nazwisko, imie, wiek, klasa, sport. <br>
+        Przy tworzeniu obiektów posłuż się zaprojektowanym <b>konstruktorem</b> obiektu. <br>
+        Dla każdego ucznia wyświetl jego nazwisko, imię, wiek oraz sport, jaki uprawia.
+        </p>
+    </div><br>
+    <script>
+        document.write('<div style="border-top-left-radius: 15px; border-top-right-radius: 15px;">' + '<b style="color: black; font-size: x-large;">Wynik skryptu</b>' + '<hr>'+ '</div>')
+        function Uczen(nazwisko, imie, wiek, klasa, sport) 
+        {
+            this.nazwisko = nazwisko;
+            this.imie = imie;
+            this.wiek = wiek;
+            this.klasa = klasa;
+            this.sport = sport;
+            this.wypisz = function() 
+            { 
+                document.write('<div>' + '<p>' + this.imie + ' ' + this.nazwisko + ' ' + this.wiek + ' lat' + ' ' + this.sport + '</p>' + '</div>')
+            }
+        }
+        var osoba1 = new Uczen('Kowalski', 'Jan', 19, '4TD', 'Piłka Nożna');
+        var osoba2 = new Uczen('Nowak', 'Piotr', 18, '3TA', 'Siatkówka');
+        var osoba3 = new Uczen('Krzyżanowski', 'Mateusz', 18, '3TB', 'Siatkówka');
+        var osoba4 = new Uczen('Nowak', 'Piotr', 18, '3TA', 'Piłka ręczna');
+        var osoba5 = new Uczen('Zdrójkowska', 'Justyna', 17, '2TC', 'Siatkówka');
+        osoba1.wypisz();
+        osoba2.wypisz();
+        osoba3.wypisz();
+        osoba4.wypisz();
+        osoba5.wypisz();
+    </script>
+    <div id="main"><hr>
+        <p><a id="link" href="/resources/twsiai-zadanie1.txt"><b>Link do kodu JavaScript</b></a></p>
+        <p><a id="link" href="/index.html">Powrót do strony głównej</a></p>
+    </div>
+</body>
+</html>

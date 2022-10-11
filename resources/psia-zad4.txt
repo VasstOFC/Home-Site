@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<script>
+function Spr_wzorzec()
+{
+var pesel = document.getElementById('pesel').value;
+var klasa = document.getElementById('klasa').value;
+var kpocztowy = document.getElementById('kpocztowy').value;
+var wz_pesel = /^[0-9]{11}$/i;
+var wz_klasa = /^[1-4][A-Z][A-Z]$/i;
+var wz_kpocztowy = /^[0-9][0-9]-[0-9][0-9][0-9]$/i;
+
+if (!wz_pesel.test(pesel))
+{
+alert('Pole "PESEL" ma niepoprawną wartość');
+return false;
+}
+
+if (!wz_klasa.test(klasa))
+{
+alert('Pole "KLASA" ma niepoprawną wartość');
+return false;
+}
+
+if (!wz_kpocztowy.test(kpocztowy))
+{
+alert('Pole "KOD POCZTOWY" ma niepoprawną wartość');
+return false;
+}
+
+alert('Wszystkie pola wypełnione poprawnie!');
+return true;
+}
+</script>
+</head>
+<body>
+<div>
+    <form id="in_form" enctype="text/plain" action="" method="post" onsubmit='return Spr_wzorzec();'>
+    <p>Dane osobowe 🗒️</p>
+
+    <b>Numer PESEL:</b>
+    <input type="text" class="pole" name="pesel" id="pesel"><br>
+
+    <b>Klasa:</b>
+    <input type="text" class="pole" name="klasa" id="klasa"><br>
+
+    <b>Kod pocztowy:</b>
+    <input type="text" class="pole" name="kpocztowy" id="kpocztowy"><br>
+
+    <input type="submit" value="Wyślij" id="button"></form>
+</div>
+
+</body>
+</html>

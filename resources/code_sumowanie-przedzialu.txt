@@ -1,0 +1,16 @@
+<script>
+function wypisz()
+   {
+    var a = parseInt(document.getElementById("start-przedzial").value);
+       var b = parseInt(document.getElementById("koniec-przedzial").value);
+        var suma=0;
+        for(var i = a; i<b+1; i++)
+        {
+            suma += i; 
+        } 
+        alert('Wynik: '+suma);
+    }
+</script>
+<input type="text" name="start-zakres" id="start-przedzial">
+<input type="text" name="koniec-zakres" id="koniec-przedzial"><br>
+<input type="submit" onClick="wypisz()" value="Zsumuj">

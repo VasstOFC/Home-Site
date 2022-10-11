@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index archiwum.css">
+    <title>Archiwum zadanek</title>
+</head>
+
+<body>
+  <h1><a class="linki" id="powrot-index" href="index.html">Powrót do obecnych zadań</a></h1>
+    <div class="wrapper">
+      <div class="buttonWrapper">
+        <button class="tab-button active" style="border-top-left-radius: 10px;" data-id="home">Języki programowania</button>
+      </div>
+      <div class="contentWrapper">
+        <p class="content active" id="home">
+            <a class="linki" href="/ZadaniaOdKycii-3klasa/zad7tabkycia.html"><b>7 luty</b><br>Zadanie 7 - Tablica deklarowana przez użytkownika</a>
+            <a class="linki" href="/ZadaniaOdKycii-3klasa/zaddodkycia.html"><br><b>27 marzec</b><br>Dodatkowe zadania z tablic | OBOWIĄZKOWE ZADANIE DLA WSZYSTKICH</a>
+            <a class="linki" href="/ZadaniaOdKycii-3klasa/zad1jskycia.html"><br><b>25 maj</b><br>Zadanie 1 - JS</a>
+            <a class="linki" href="/ZadaniaOdKycii-3klasa/zadaniejs-petlafor.html"><br><b>5 czerwiec</b><br>| Zadanie JS - Pętla FOR</a>
+        </p>
+      </div>
+    </div>
+  </body>
+  <script>
+    const tabs = document.querySelector(".wrapper");
+    const tabButton = document.querySelectorAll(".tab-button");
+    const contents = document.querySelectorAll(".content");
+
+    tabs.onclick = e => {
+        const id = e.target.dataset.id;
+        if (id) {
+            tabButton.forEach(btn => {
+            btn.classList.remove("active");
+        });
+        e.target.classList.add("active");
+
+        contents.forEach(content => {
+        content.classList.remove("active");
+        });
+        const element = document.getElementById(id);
+        element.classList.add("active");
+                }
+}
+  </script>
+</html>

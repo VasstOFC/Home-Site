@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css">
+    <title>Lista zadań</title>
+    <link rel="shortcut icon" href="/resources/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+  <section class="showcase">
+    <header>
+      <h2 class="logo"> Strona główna🙋‍♂️🔥</h2>
+      <div class="toggle"></div>
+    </header>
+    <div class="overlay"></div>
+    <div class="text">
+      <h2>+ Lista zadań do +</h2> 
+      <h3>+ przedmiotów zawodowych +</h3><br><br>
+      <p>ಥ Jak nazywa się pies bez łap? ಥ<br>
+        ಥ To nie ważne i tak nie przyjdzie ಥ</p>
+    </div>
+  </section>
+  <div class="menu">
+    <ul>
+      <li><a href="/index.html">Strona główna</a></li>
+      <li><a href="/wyklad-twsiai.html">Smycz</a></li>
+      <li><a href="/pracownia-twsiai.html">Dąbek</a></li>
+    </ul>
+  </div>
+
+  <script>
+  const menuToggle = document.querySelector('.toggle');
+  const showcase = document.querySelector('.showcase');
+
+  menuToggle.addEventListener('click', () => {
+  menuToggle.classList.toggle('active');
+  showcase.classList.toggle('active');
+})
+  </script>
+    </body>
+</html>

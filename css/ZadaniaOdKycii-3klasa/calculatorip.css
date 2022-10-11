@@ -1,0 +1,12 @@
+input.flat {  border-style:solid; border-width:1px;background-color:#fff;
+    color:#f00;font-size:small;border-color:#fff;}
+input.in {  background-color:#ddff33; }
+.inbtn {  background:#ddff33; }
+p.copy { margin-top: 8pt; 
+  border-top: 1px solid #bbb;
+  font-family: arial,Helvetica,sans-serif;
+  font-weight: normal;
+  width: 90%;
+  font-size: 80%;
+  color: #888;
+}

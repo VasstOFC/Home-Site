@@ -1,0 +1,8 @@
+<?php
+$calkowita= 15;
+$rzeczywista= -3;
+$znaki= "aaaabbbbcccc";
+echo "Liczba całkowita: ".$calkowita."<br>";
+echo "Liczba rzeczywista: ".$rzeczywista."<br>";
+echo "Ciąg znaków: ".$znaki;
+?>

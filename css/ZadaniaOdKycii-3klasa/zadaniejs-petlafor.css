@@ -1,0 +1,47 @@
+body {
+    background: #0f0c29;
+    background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);
+    background: linear-gradient(to right, #24243e, #302b63, #0f0c29);
+    margin: 0;
+}
+a {
+    text-decoration: none;
+    color: rgb(190, 106, 226);
+}
+a#back {
+  text-decoration: none;
+  font-weight: bold;
+  color: rgb(106, 108, 226);
+}
+section#zadanie {
+    background-color: rgba(211, 211, 211, 0.425);
+    padding: 15px;
+    border-radius: 0 0 15px 15px;
+    margin: 0 auto;
+    width: 370px;
+}
+input[type=submit] {
+  background: linear-gradient(to right, #ef8e38, #108dc7);
+  border-radius: 5px;
+  padding: 5px 15px 5px 15px;
+  border: 1px solid black;
+  margin: 5px;
+  font-weight: bold;
+  width: 100px;
+}
+input[type=text] {
+  background: linear-gradient(to left, #667db6, #0082c8, #0082c8, #667db6);
+  border-radius: 5px;
+  padding: 5px;
+  border: 1px solid black;
+  width: 50px;
+}
+p#wynik {
+  margin-left: 5px;
+  display: inline;
+  color: #ffffff;
+  font-weight: bold;
+}
+img {
+    border-radius: 5px;
+}

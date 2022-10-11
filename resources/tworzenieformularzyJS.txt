@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strona</title>
+<head>
+</head>
+<body onload="Form('pesel');">
+<table>
+<tr><td>PESEL:</td><td><input id="pesel" type="text" onkeyup="Form('pesel');"/>
+<span id="hasError" style="color: red;" title="Nieprawidłowy numer PESEL">*</span>
+<tr><td>Płeć:</td><td><input id="plec" type="text" disabled/></td></tr>
+<span id="hasError" style="color: red;"><b>Nieprawidłowy numer PESEL</td></b>
+    <br>Sprawdź czy:
+    <br>* ciąg znaków wynosi 11 znaków
+    <br>* wprowadzone znaki to są jedynie cyfry
+    <br>* suma kontrolna numeru PESEL jest prawidłowa</span><hr>
+</table>
+</body>
+<script type="text/javascript" src="zad1-tworzenieformularzyJS.js"></script>
+</html>
+
+<--------------------------------------------------------------------------------------------------->
+  function Form(id)
+  {
+    var s = document.getElementById(id).value;
+    if (SetError(s.length != 11))
+      return;
+
+    var aInt = new Array();
+    for (i=0;i<11; i++)
+    {
+      aInt[i] = parseInt(s.substring(i,i+1));
+      if (isNaN(aInt[i]))
+      {
+        SetError(1);
+        return;
+      }
+    }
+
+    var wagi = [1,3,7,9,1,3,7,9,1,3,1];
+    var sum=0;
+    for (i=0;i<11;i++)
+      sum+=wagi[i]*aInt[i];
+    if (SetError((sum%10)!=0))
+      return;
+      
+    var plec = (aInt[9]%2==1)?"M":"K";
+    document.getElementById("plec").value = plec;
+  }
+  function SetError(c){
+    document.getElementById("hasError").style.visibility=(c?"visible":"hidden");
+    return c;
+  }

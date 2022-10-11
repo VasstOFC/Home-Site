@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+ console.log("Zdjęcie sowy - domyslnie wyświetlane")
+function nacisniecie() {
+ document.getElementById('photo').src = "/resources/kot.jpg";
+ console.log("Zdjęcie kota - po naciśnięciu obrazka prawym przyciskiem myszy")
+}
+function podw_nacisniecie() {
+ document.getElementById('photo').src = "/resources/lama.jpg";
+ console.log("Zdjęcie lamy - po podwójnym naciśnięciu obrazka")
+}
+function najechanie() {
+ document.getElementById('photo').src = "/resources/pies.jpg";
+ console.log("Zdjęcie psa - po najechaniu na obrazek")
+}
+function wyjechanie() {
+ document.getElementById('photo').src = "/resources/pingwin.jpg";
+ console.log("Zdjęcie pingwina - po wyjechaniu z obrazka")
+}
+</script>
+</head>
+<body>
+<img id="photo" oncontextmenu="nacisniecie()" ondblclick="podw_nacisniecie()" onmouseover="najechanie()" onmouseout="wyjechanie()" src="/resources/sowa.jpg" width="500" height="500"/><br>
+</body>
+</html>
