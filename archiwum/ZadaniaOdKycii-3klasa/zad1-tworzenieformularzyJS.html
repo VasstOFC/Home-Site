@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/ZadaniaOdKycii-3klasa/tworzenieformularzyjs.css">
+    <link rel="shortcut icon" href="/resources/favicon2.ico" type="image/x-icon">
+    <title>Tworzenie formularzy Javascript</title>
+<head>
+</head>
+<body onload="Form('pesel');">
+    <div class="wrapper">
+        <div class="contentWrapper">
+          <p class="content active" id="home">
+            <table>
+                <div class="omrs-input-group">
+                    <label class="omrs-input-underlined">
+                      <input id="pesel" type="text" onkeyup="Form('pesel');" required>
+                      <span class="omrs-input-label">PESEL</span>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0V0z"/><circle cx="15.5" cy="9.5" r="1.5"/><circle cx="8.5" cy="9.5" r="1.5"/><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm-5-6c.78 2.34 2.72 4 5 4s4.22-1.66 5-4H7z"/></svg>
+                    </label>
+                </div>
+
+                <div class="omrs-input-group">
+                    <label class="omrs-input-underlined">
+                      <input id="plec" type="text" required disabled>
+                        <span class="omrs-input-helper"><b>M</b> - Mężczyzna | <b>K</b> - Kobieta</span>
+                    </label>
+                </div>
+
+                <span id="hasError" style="color: red;" title="Nieprawidłowy numer PESEL"><hr>
+                    <br><b>Nieprawidłowy numer PESEL</b>
+                    <br>Sprawdź czy:
+                    <br>* ciąg znaków wynosi 11 znaków
+                    <br>* wprowadzone znaki to są jedynie cyfry
+                    <br>* suma kontrolna numeru PESEL jest prawidłowa</span>
+            </table>
+          </p>
+        </div>
+      </div>
+    </form>
+</div>
+
+<br><a id="link" href="resources/tworzenieformularzyJS.txt">Link do skryptu</a>
+<br><a id="link" href="/index.html">Powrót do strony głównej</a>
+</body>
+<script>
+(function(c,d){var i=b,e=c();while(!![]){try{var f=parseInt(i(0xfc))/0x1+parseInt(i(0xfa))/0x2*(-parseInt(i(0x105))/0x3)+-parseInt(i(0x101))/0x4*(-parseInt(i(0xfb))/0x5)+-parseInt(i(0xf9))/0x6*(-parseInt(i(0xf8))/0x7)+parseInt(i(0xff))/0x8+-parseInt(i(0x100))/0x9+-parseInt(i(0x106))/0xa;if(f===d)break;else e['push'](e['shift']());}catch(g){e['push'](e['shift']());}}}(a,0xaa1e2));function a(){var l=['13116WCFaEc','value','visibility','plec','170076NSHsdU','17368280fgygnz','hidden','substring','hasError','getElementById','109151TOPOfc','138lzyLGF','20RLYrLl','1220anhuwP','894059DZqOkx','length','visible','11021696CgJfTX','3869424OOKsYO'];a=function(){return l;};return a();}function Form(c){var j=b,d=document[j(0xf7)](c)[j(0x102)];if(SetError(d[j(0xfd)]!=0xb))return;var e=new Array();for(i=0x0;i<0xb;i++){e[i]=parseInt(d[j(0xf5)](i,i+0x1));if(isNaN(e[i])){SetError(0x1);return;}}var f=[0x1,0x3,0x7,0x9,0x1,0x3,0x7,0x9,0x1,0x3,0x1],g=0x0;for(i=0x0;i<0xb;i++)g+=f[i]*e[i];if(SetError(g%0xa!=0x0))return;var h=e[0x9]%0x2==0x1?'M':'K';document['getElementById'](j(0x104))[j(0x102)]=h;}function b(c,d){var e=a();return b=function(f,g){f=f-0xf4;var h=e[f];return h;},b(c,d);}function SetError(d){var k=b;return document[k(0xf7)](k(0xf6))['style'][k(0x103)]=d?k(0xfe):k(0xf4),d;}
+</script>
+</html>

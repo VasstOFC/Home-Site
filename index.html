@@ -1,15 +1,28 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/index.css">
-    <title>Lista zadań</title>
-    <link rel="shortcut icon" href="/resources/favicon.ico" type="image/x-icon">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="/loader-wrapper.css">
+  <title>Lista zadań</title>
+  <link rel="shortcut icon" href="/resources/favicon.ico" type="image/x-icon">
+  <link href='https://fonts.googleapis.com/css?family=Roboto:400,100' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700' rel='stylesheet' type='text/css'>
+  <link href="https://netdna.bootstrapcdn.com/font-awesome/3.1.1/css/font-awesome.css" rel="stylesheet">
 </head>
 
 <body>
+  <figure class="preloader" id="preloader">
+    <div class="circles-group">
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+    </div>
+  </figure>
   <section class="showcase">
     <header>
       <h2 class="logo"> Strona główna🙋‍♂️🔥</h2>
@@ -17,11 +30,10 @@
     </header>
     <div class="overlay"></div>
     <div class="text">
-      <h2>+ Lista zadań do +</h2> 
-      <h3>+ przedmiotów zawodowych +</h3><br><br>
-      <p>ಥ Jak nazywa się pies bez łap? ಥ<br>
-        ಥ To nie ważne i tak nie przyjdzie ಥ</p>
-    </div>
+      <h2>Lista zadań do</h2>
+      <h3>przedmiotów zawodowych</h3><br><br>
+      <p>Jak nazywa się pies bez łap?<br>
+        To nie ważne i tak nie przyjdzie 🙈</p>
   </section>
   <div class="menu">
     <ul>
@@ -30,15 +42,23 @@
       <li><a href="/pracownia-twsiai.html">Dąbek</a></li>
     </ul>
   </div>
-
   <script>
-  const menuToggle = document.querySelector('.toggle');
-  const showcase = document.querySelector('.showcase');
+    const menuToggle = document.querySelector('.toggle');
+    const showcase = document.querySelector('.showcase');
 
-  menuToggle.addEventListener('click', () => {
-  menuToggle.classList.toggle('active');
-  showcase.classList.toggle('active');
-})
+    menuToggle.addEventListener('click', () => {
+      menuToggle.classList.toggle('active');
+      showcase.classList.toggle('active');
+    })
+
+    const preloader = document.querySelector('#preloader');
+
+    preloader.classList.add('show-preloader');
+
+    window.addEventListener('load', function () {
+      preloader.classList.remove('show-preloader');
+    });
   </script>
-    </body>
+</body>
+
 </html>
