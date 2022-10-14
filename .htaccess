@@ -1,10 +1,9 @@
 ErrorDocument 404 /404.html
 
 RewriteEngine on
-RewriteRule ^home?$ index.html
+RewriteRule ^strona-glowna?$ index.html
 RewriteRule ^wyklad-ze-stron-i-aplikacji?$ wyklad-twsiai.html
 RewriteRule ^pracownia-stron-i-aplikacji?$ pracownia-twsiai.html
-RewriteRule ^error404?$ 404.html
 RewriteRule ^zadanie1?$ /twsiai/zadanie1.html
 RewriteRule ^zadanie2?$ /twsiai/zadanie2.html
 RewriteRule ^wyklad-skrypt-zadanie1?$ /resources/twsiai-zadanie1.txt
@@ -12,3 +11,9 @@ RewriteRule ^wyklad-skrypt-zadanie2?$ /resources/twsiai-zadanie2.txt
 RewriteRule ^pracownia-zadanie2?$ /resources/psia-zad2.txt
 RewriteRule ^pracownia-zadanie3?$ /resources/psia-zad3.txt
 RewriteRule ^pracownia-zadanie4?$ /resources/psia-zad4.txt
+
+<Files .htaccess>
+order allow,deny
+allow from all
+</Files>
+ 
