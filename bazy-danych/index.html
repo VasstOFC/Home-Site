@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/bazy-danych.css">
+    <link rel="stylesheet" href="/loader-wrapper.css">
+    <title>Bazy danych</title>
+    <link rel="shortcut icon" href="/resources/favicon2.ico" type="image/x-icon">
+</head>
+
+<body>
+        <figure class="preloader" id="preloader">
+            <div class="flipping"></div>
+        </figure>
+        <header>
+            <h1 class="logo"><a class="link" href="/index.html">
+                    <p class="logo">
+                        << Strona główna</p>
+                </a></h2>
+                <h1 class="logo"><a class="link" href="#">
+                        <p class="logo"><b>Tworzenie stron i aplikacji internetowych</b></p>
+                    </a></h4>
+                    <h1 class="logo"><a class="link" href="/pracownia-stron-aplikacji/index.html">
+                            <p class="logo">Pracownia stron i aplikacji internetowych >></p>
+                        </a></h2>
+        </header><hr style="opacity: 25%">
+        <div class="overlay"></div><br><br><br>
+        <div id="c1">
+            <div id="cc2">
+                <p><b style="color: aqua;">23 wrzesień 2022</b>
+                    <hr><br><br>
+                <p>Zadanie domowe</p>Konstruktor obiektu JavaScript<br><br><a class="link" href="1-zadanie.html">przejdź
+                    do zadania</a></p>
+            </div><br>
+            <div id="cc2">
+                <p><b style="color: aqua;">7 październik 2022</b>
+                    <hr><br><br>
+                <p>Zadanie domowe</p>
+                <p></p>Zadanie PHP<br><br><a class="link" href="2-zadanie.html">przejdź do zadania</a></p>
+            </div>
+        </div>
+    </section>
+    <script>
+        const preloader = document.querySelector('#preloader');
+
+        preloader.classList.add('show-preloader');
+
+        window.addEventListener('load', function () {
+            setTimeout(function () {
+                preloader.classList.remove('show-preloader');
+            }, 2000);
+        });
+    </script>
+</body>
+
+</html>

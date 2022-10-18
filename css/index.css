@@ -180,10 +180,30 @@ header .logo
   font-size: 24px;
   color: #111;
 }
+.menu ul li a#home2
+{
+  text-decoration: none;
+  font-size: 16px;
+  color: #111;
+}
+
 .menu ul li a:hover
 {
   color: #03a9f4; 
 }
+.menu ul li a#home:hover
+{
+  color: #f0cc00; 
+}
+.menu ul li a#home2:hover
+{
+  color: #03a9f4;
+}
+.menu ul li a#materialy:hover
+{
+  color: #88c004; 
+}
+
 
 @media (max-width: 991px)
 {

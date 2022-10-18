@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Lato';
+}
+
+body {
+  background-color: #001620;
+}
+
+header {
+  padding: 30px;
+  z-index: 1000;
+  display: flex;
+  font-size: 10px;
+  width: 100%;
+}
+
+header .logo {
+  color: #fff;
+  padding: 3px;
+  width: 100%;
+  display: block;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+header .logos {
+  color: #fff;
+  width: 100%;
+  text-transform: uppercase;
+  display: block;
+  cursor: pointer;
+  margin-top: 0px;
+}
+
+.showcase {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 15px;
+  justify-content: space-between;
+  align-items: center;
+  background: #001620;
+  transition: 0.5s;
+  z-index: 2;
+}
+
+.overlay {
+  position: absolute;
+  width: 100%;
+  mix-blend-mode: overlay;
+}
+
+.box {
+  background-color: #03a9f4;
+}
+
+.link {
+  color: white;
+  text-decoration: none;
+}
+
+.link:hover {
+  color: orange;
+  font-weight: bold;
+  text-shadow: 5px 10px 15px rgb(111, 194, 136);
+}
+
+#c1 {
+  background-image: url(/resources/background1.jpg);
+  background-size: cover;
+  -webkit-box-shadow: 0px 0px 37px 43px rgba(1, 32, 46);
+  -moz-box-shadow: 0px 0px 37px 43px rgba(1, 32, 46);
+  box-shadow: 0px 0px 37px 43px rgb(1, 32, 46);
+  padding: 15px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+#c2 {
+  background-image: url(/resources/background1.jpg);
+  padding: 15px;
+  border-radius: 15px;
+  width: 100%;
+}
+
+div #cc1 {
+  background: gray;
+  padding: 15px;
+  border-radius: 15px;
+  width: 25%;
+}
+
+div #cc2 {
+  background: rgba(255,255,255,0.5);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255,255,255,0.25);
+  padding: 15px;
+  border-radius: 15px;
+  width: 100%;
+  opacity: 70%;
+}
+
+div div#cc2 p b {
+  text-decoration: dashed
+}
+
+p.logo {
+  text-align: center;
+  font-size: 15px;
+}
