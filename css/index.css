@@ -79,7 +79,7 @@ header .logo
   left: 0;
   width: 100%;
   height: 100%;
-  background: #03a9f4;
+  background: url(/resources/dell-1o5MZblCP50-unsplash.jpg);
   mix-blend-mode: overlay;
 }
 .text
@@ -194,10 +194,6 @@ header .logo
 .menu ul li a#home:hover
 {
   color: #f0cc00; 
-}
-.menu ul li a#home2:hover
-{
-  color: #03a9f4;
 }
 .menu ul li a#materialy:hover
 {

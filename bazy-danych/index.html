@@ -1,48 +1,60 @@
 <!DOCTYPE html>
-<html>
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/bazy-danych.css">
+    <title>Konstruktor obiektu JavaScript</title>
     <link rel="stylesheet" href="/loader-wrapper.css">
-    <title>Bazy danych</title>
-    <link rel="shortcut icon" href="/resources/favicon2.ico" type="image/x-icon">
+    <link rel="stylesheet" href="/css/bazy-danych.css">
+    <link rel="shortcut icon" href="/resources/icon.ico" type="image/x-icon">
 </head>
 
 <body>
-        <figure class="preloader" id="preloader">
-            <div class="flipping"></div>
-        </figure>
-        <header>
-            <h1 class="logo"><a class="link" href="/index.html">
-                    <p class="logo">
-                        << Strona główna</p>
-                </a></h2>
-                <h1 class="logo"><a class="link" href="#">
-                        <p class="logo"><b>Tworzenie stron i aplikacji internetowych</b></p>
-                    </a></h4>
-                    <h1 class="logo"><a class="link" href="/pracownia-stron-aplikacji/index.html">
-                            <p class="logo">Pracownia stron i aplikacji internetowych >></p>
-                        </a></h2>
-        </header><hr style="opacity: 25%">
-        <div class="overlay"></div><br><br><br>
-        <div id="c1">
-            <div id="cc2">
-                <p><b style="color: aqua;">23 wrzesień 2022</b>
-                    <hr><br><br>
-                <p>Zadanie domowe</p>Konstruktor obiektu JavaScript<br><br><a class="link" href="1-zadanie.html">przejdź
-                    do zadania</a></p>
-            </div><br>
-            <div id="cc2">
-                <p><b style="color: aqua;">7 październik 2022</b>
-                    <hr><br><br>
-                <p>Zadanie domowe</p>
-                <p></p>Zadanie PHP<br><br><a class="link" href="2-zadanie.html">przejdź do zadania</a></p>
-            </div>
+    <figure class="preloader" id="preloader">
+        <div class="circles-group">
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
         </div>
-    </section>
+    </figure>
+    <div id="main">
+        <b style="color: white; font-size: larger;">Treść zadania</b><br><br>
+        <p>
+            <img src="/resources/Zadanie BD.jpg" width="800px" style="border-radius: 10px;">
+        </p>
+        <hr>
+    </div>
+    <div id="script">
+        <b style="color: white; font-size: larger;">Zapytanie 1</b><br><br>
+        <p>
+            <img src="/resources/kw1.jpg" width="800px" style="border-radius: 10px;">
+        </p>
+        <hr>
+        <b style="color: white; font-size: larger;">Zapytanie 2</b><br><br>
+        <p>
+            <img src="/resources/kw2.jpg" width="800px" style="border-radius: 10px;">
+        </p>
+        <hr>
+        <b style="color: white; font-size: larger;">Zapytanie 3</b><br><br>
+        <p>
+            <img src="/resources/kw3.jpg" width="800px" style="border-radius: 10px;">
+        </p>
+        <hr>
+        <b style="color: white; font-size: larger;">Zapytanie 4</b><br><br>
+        <p>
+            <img src="/resources/kw4.jpg" width="800px" style="border-radius: 10px;"><br>
+            <img src="/resources/kw4a.jpg" width="800px" style="border-radius: 10px;">
+        </p>
+        <hr>
+        <p style="color: white;">Kliknij poniżej aby pobrać</p>
+        <p><a style="color: white;" id="link2" href="/resources/baza.sql">baza.sql</a></p>
+    </div>
+    <div id="main2">
+        <hr>
+        <p><a style="color: white;" id="link" href="/index.html">Powrót do strony głównej</a></p>
+    </div>
     <script>
         const preloader = document.querySelector('#preloader');
 
