@@ -11,7 +11,7 @@ body {
   height: 1150px;
 }
 li {
-  color: rgb(111, 194, 136);
+  color: rgb(44, 201, 83);
 }
 ul {
   margin-left: 20px;
@@ -74,6 +74,7 @@ p.logo {
     text-decoration: none;
 }
 .link:hover {
+  transition: all 0.5s ease;
   color: orange;
   font-weight: bold;
   text-shadow: 5px 10px 15px rgb(111, 194, 136);
