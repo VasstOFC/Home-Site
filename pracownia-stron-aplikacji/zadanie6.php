@@ -93,7 +93,7 @@
             echo '<hr>';
 
             /*                 Sprawdzanie płci                */
-            if (!empty($pesel[9]) % 2 == 1) {
+            if ($pesel[9] % 2 == 1) {
                 echo 'Płeć: Mężczyzna';
             } else {
                 echo 'Płeć: Kobieta';
